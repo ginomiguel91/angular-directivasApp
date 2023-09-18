@@ -14,8 +14,6 @@ export class ErrorMsgDirective implements OnInit, OnChanges {
   htmlElement: ElementRef<HTMLElement>;
   private _color: string = 'red';
   private _mensaje: string = 'Este campo es requerido';
-  @Input() defaultColor = 'red';
-  @Input() defaultMensaje = 'Este campo es requerido';
   @Input() set color(valor: string) {
     this._color = valor;
     this.setColor();
